@@ -53,7 +53,7 @@ export default function App() {
 
   const toggleStar = (e: React.MouseEvent, id: number) => {
     e.stopPropagation();
-    // Normally would update state, for UI demo we just mock it.
+    console.log(`Toggled star for id: ${id}`);
   };
 
   const filteredFiles = useMemo(() => {
