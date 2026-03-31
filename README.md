@@ -229,12 +229,27 @@ arkive/
 3. **Set up branches** for different team members
 4. **Use Pull Requests** for code review
 
-### Environment Variables (if needed)
-
-Create a `.env.local` file for local development:
-```env
 VITE_API_URL=your_api_url_here
 ```
+
+### 🎨 Minor Tweaks (Team Customization)
+
+Team members can quickly customize the following:
+- **Theme Colors & Branding**: Modify `src/styles/theme.css` to update primary gradients and accents.
+- **Mock Data**: Update the `allFiles`, `recentActivity`, and `quickAccess` constants in `src/app/App.tsx` to change the dashboard content.
+- **Sidebar Menu**: Add or remove navigation items in the `handleViewChange` logic within `App.tsx`.
+- **UI Components**: All low-level components (Buttons, Inputs, Modals) are located in `src/app/components/ui/`.
+
+---
+
+## 📚 Supporting Documentation
+
+Detailed guides are located in the `docs/` folder:
+- [Walkthrough Guide](docs/ARKIVE_Walkthrough_Guide.md)
+- [Team Quick Start](docs/TEAM_QUICK_START.md)
+- [Deployment Guide](docs/DEPLOYMENT_GUIDE.md)
+
+---
 
 Add environment variables in Vercel dashboard:
 - Go to Project Settings → Environment Variables
